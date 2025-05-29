@@ -16,8 +16,16 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="#">
-      <img class="main-header__logo-image" src="" width="" height=""
-        alt="Воинствующий кот в маске и плаще, маскот компании 'Cat energy'">
+      <picture>
+        <source srcset="images/logo/logo-desktop.svg" width="70" height="59" media="(min-width: 1280px)"
+          type="image/svg+xml">
+        <source srcset="images/logo/logo-tablet.svg" width="60" height="50" media="(min-width: 768px)"
+          type="image/svg+xml">
+        <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="33" height="38"
+          alt="Воинствующий кот в маске и плаще, маскот компании 'Cat energy'">
+      </picture>
+      <img class="logo-text" src="images/logo/logo-text.svg" width="101" height="18"
+        alt="Текстовый логотип 'Cat energy'">
     </a>
     <nav class="main-nav">
       <button class="main-nav__button" type="button">
@@ -413,7 +421,13 @@
           <p class="address__desc">Санкт-Петербург</p>
         </address>
       </div>
-      <div class="address__map"></div>
+      <div class="address__map">
+        <iframe class="address__map--js" title="Геологкация: город Санкт-Петербург ул.Большая Конюшенная, д. 19/8."
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d6669b729b71a2766c760885e5a0ec89bdcbc92ea19da0125c29644d37f2d9c&amp;source=constructor"
+          width="320" height="362" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <noscript class="address__map--nojs"></noscript>
+      </div>
     </section>
   </main>
 

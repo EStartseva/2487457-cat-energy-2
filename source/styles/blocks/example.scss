@@ -58,7 +58,7 @@
 .example__list {
   @include full-flex();
   width: 100%;
-  gap: 19px 32px;
+  gap: 10px 32px;
   padding: 0;
   margin: 0 0 20px;
   list-style: none;
@@ -109,6 +109,8 @@
 }
 
 .example__item--secondary .example__name {
+  display: inline;
+
   @media screen and (min-width: $tablet-width) {
     display: block;
     margin-bottom: 9px;
@@ -117,8 +119,16 @@
 
   @media screen and (min-width: $desktop-width) {
     display: inline;
-    margin: 0 60px 0 0;
     word-spacing: 1px;
+  }
+}
+
+.example__meaning {
+  display: inline;
+  margin-left: 5px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 60px;
   }
 }
 
@@ -143,7 +153,7 @@
   display: block;
   width: $width-slider-mobile;
   height: $height-slider-mobile;
-  object-fit: none;
+  object-fit: cover;
 
   &--before {
     object-position: left;

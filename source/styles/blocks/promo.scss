@@ -54,7 +54,10 @@
 }
 
 .promo__email {
-	font-size: 20px;
+	@include font-full($oswald-font, 20px);
+	text-transform: uppercase;
+	border: 1px solid #e7e7e7;
+	height: 56px;
 	line-height: 29.6px;
 	padding: 14px 12px 11px;
 	width: 280px;
@@ -71,6 +74,7 @@
 .promo__button {
 	padding-block: 14px;
 	width: 100%;
+	height: 56px;
 
 	@media screen and (min-width: $tablet-width) {
 		width: 256px;

@@ -25,9 +25,9 @@
           <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="33" height="38"
             alt="Воинствующий кот в маске и плаще, маскот компании 'Cat energy'">
         </picture>
-        <img class="main-header__logo-text" src="images/logo/logo-text.svg" width="101" height="18"
-          alt="Текстовый логотип 'Cat energy'">
       </a>
+      <img class="main-header__logo-text" src="images/logo/logo-text.svg" width="101" height="18"
+        alt="Текстовый логотип 'Cat energy'">
       <nav class="main-nav main-nav--home main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle--closed" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
@@ -52,25 +52,28 @@
       <div class="hero__container">
         <h1 class="hero__title">Функциональное <br> питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source srcset="images/index-content/index-product@1x.webp 1x, images/index-content/index-product@2x.webp 2x"
-            width="552" height="499" type="image/webp" media="(min-width: 1280px)">
-          <source
-            srcset="images/index-content/index-product-tablet@1x.webp 1x,images/index-content/index-product-tablet@2x.webp 2x"
-            width="709" height="609" type="image/webp" media="(min-width: 768px)">
-          <source
-            srcset="images/index-content/index-product-mobile@1x.webp 1x, images/index-content/index-product-mobile@2x.webp 2x"
-            width="280" height="270" type="image/webp">
+        <div class="hero__image">
+          <picture>
+            <source
+              srcset="images/index-content/index-product@1x.webp 1x, images/index-content/index-product@2x.webp 2x"
+              width="552" height="499" type="image/webp" media="(min-width: 1280px)">
+            <source
+              srcset="images/index-content/index-product-tablet@1x.webp 1x,images/index-content/index-product-tablet@2x.webp 2x"
+              width="709" height="609" type="image/webp" media="(min-width: 768px)">
+            <source
+              srcset="images/index-content/index-product-mobile@1x.webp 1x, images/index-content/index-product-mobile@2x.webp 2x"
+              width="280" height="270" type="image/webp">
 
-          <source srcset="images/index-content/index-product@1x.png 1x, images/index-content/index-product@2x.png 2x"
-            width="552" height="499" type="image/png" media="(min-width: 1280px)">
-          <source
-            srcset="images/index-content/index-product-tablet@1x.png 1x, images/index-content/index-product-tablet@2x.png 2x"
-            width="709" height="609" type="image/png" media="(min-width: 768px)">
-          <img class="hero__image" src="images/index-content/index-product-mobile@1x.png"
-            srcset="images/index-content/index-product-mobile@2x.png 2x" width="280" height="270"
-            alt="Упаковка фирменного корма">
-        </picture>
+            <source srcset="images/index-content/index-product@1x.png 1x, images/index-content/index-product@2x.png 2x"
+              width="552" height="499" type="image/png" media="(min-width: 1280px)">
+            <source
+              srcset="images/index-content/index-product-tablet@1x.png 1x, images/index-content/index-product-tablet@2x.png 2x"
+              width="709" height="609" type="image/png" media="(min-width: 768px)">
+            <img class="hero__image" src="images/index-content/index-product-mobile@1x.png"
+              srcset="images/index-content/index-product-mobile@2x.png 2x" width="280" height="270"
+              alt="Упаковка фирменного корма">
+          </picture>
+        </div>
         <a class="hero__button basic-button" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -124,12 +127,12 @@
           в день.</p>
         <ul class="example__list">
           <li class="example__item parameter">
-            <p class="parameter__meaning">5 КГ</p>
+            <span class="parameter__meaning">5 КГ</span>
             <p class="parameter__name">снижение веса</p>
           </li>
           <li class="example__item parameter">
             <p class="parameter__meaning">60 ДНЕЙ</p>
-            <p class="parameter__name parameter__name--different">затрачено времени</p>
+            <span class="parameter__name parameter__name--different">затрачено времени</span>
           </li>
           <li class="example__item example__item--secondary">
             <p class="example__name">ЗАТРАТЫ НА ПИТАНИЕ:</p>

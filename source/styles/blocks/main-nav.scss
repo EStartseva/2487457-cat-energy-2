@@ -1,11 +1,9 @@
 .main-nav {
 	@include full-flex(center, flex-end, column nowrap);
 	@include font-full($oswald-font, 20px, 1, 400, $secondary-color);
-	width: 58px;
 	min-height: 24px;
 	font-style: normal;
 	text-transform: uppercase;
-	margin-left: auto;
 	margin-block: auto;
 
 	@media screen and (max-width: $mobile-width) {
@@ -21,6 +19,7 @@
 		width: 436px;
 		font-size: 18px;
 		line-height: 24px;
+		margin-left: auto;
 	}
 
 	@media screen and (min-width: $desktop-width) {

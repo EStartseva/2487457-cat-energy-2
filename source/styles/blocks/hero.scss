@@ -1,42 +1,42 @@
 .hero {
-	padding-block: 27px 0;
-	text-align: center;
-	background-image:
-		linear-gradient(to bottom, rgba($basic-green, 0.85) 62.92%, $primary-bg-color 62.92%),
-		image-set(url("../../images/background/hero-background-mobile@1x.webp") 1x, url("../../images/background/hero-background-mobile@1x.png") 1x, url("../../images/background/hero-background-mobile@2x.webp") 2x, url("../../images/background/hero-background-mobile@2x.png") 2x),
-		linear-gradient(to bottom, #4c4b50 62.92%, $primary-bg-color 62.92%);
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: 100% auto, 320px auto, 100% auto;
+  padding-block: 27px 0;
+  text-align: center;
+  background-image:
+    linear-gradient(to bottom, rgba($basic-green, 0.85) 62.92%, $primary-bg-color 62.92%),
+    image-set(url("../../images/background/hero-background-mobile@1x.webp") 1x, url("../../images/background/hero-background-mobile@1x.png") 1x, url("../../images/background/hero-background-mobile@2x.webp") 2x, url("../../images/background/hero-background-mobile@2x.png") 2x),
+    linear-gradient(to bottom, #4c4b50 62.92%, $primary-bg-color 62.92%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto, 320px auto, 100% auto;
 
-	@media screen and (min-width: $tablet-width) {
-		padding-block: 62px 0;
-		background-image: none;
-		text-align: left;
-	}
+  @media screen and (min-width: $tablet-width) {
+    padding-block: 62px 0;
+    background-image: none;
+    text-align: left;
+  }
 
-	@media screen and (min-width: $desktop-width) {
-		position: relative;
-		padding-block: 0;
-		min-height: 551px;
-	}
+  @media screen and (min-width: $desktop-width) {
+    position: relative;
+    padding-block: 0;
+    min-height: 551px;
+  }
 
-	&::before {
-		@media screen and (min-width: $desktop-width) {
-			@include before-after(100%, clamp(100%, 694px, 694px));
-			position: absolute;
-			top: -143px;
-			left: 0;
-			z-index: -1;
-			background-image:
-				linear-gradient(to left, rgba($basic-green, 0.85) 50%, $primary-bg-color 50%),
-				image-set(url("../../images/background/hero-background-desktop@1x.webp") 1x, url("../../images/background/hero-background-desktop@1x.png") 1x, url("../../images/background/hero-background-desktop@2x.webp") 2x, url("../../images/background/hero-background-desktop@2x.png") 2x),
-				linear-gradient(to left, #4e4f53 50%, $primary-bg-color 50%);
-			background-position: top right;
-			background-size: 100% auto, 50% auto, 100% auto;
-			background-repeat: no-repeat;
-		}
-	}
+  &::before {
+    @media screen and (min-width: $desktop-width) {
+      @include before-after(100%, clamp(100%, 694px, 694px));
+      position: absolute;
+      top: -143px;
+      left: 0;
+      z-index: -1;
+      background-image:
+        linear-gradient(to left, rgba($basic-green, 0.85) 50%, $primary-bg-color 50%),
+        image-set(url("../../images/background/hero-background-desktop@1x.webp") 1x, url("../../images/background/hero-background-desktop@1x.png") 1x, url("../../images/background/hero-background-desktop@2x.webp") 2x, url("../../images/background/hero-background-desktop@2x.png") 2x),
+        linear-gradient(to left, #4e4f53 50%, $primary-bg-color 50%);
+      background-position: top right;
+      background-size: 100% auto, 50% auto, 100% auto;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .hero__container {

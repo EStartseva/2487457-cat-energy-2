@@ -3,7 +3,12 @@
   text-align: center;
   background-image:
     linear-gradient(to bottom, rgba($basic-green, 0.85) 62.92%, $primary-bg-color 62.92%),
-    image-set(url("../../images/background/hero-background-mobile@1x.webp") 1x, url("../../images/background/hero-background-mobile@1x.png") 1x, url("../../images/background/hero-background-mobile@2x.webp") 2x, url("../../images/background/hero-background-mobile@2x.png") 2x),
+    image-set(
+      url("../../images/background/hero-background-mobile@1x.webp") 1x,
+      url("../../images/background/hero-background-mobile@1x.png") 1x,
+      url("../../images/background/hero-background-mobile@2x.webp") 2x,
+      url("../../images/background/hero-background-mobile@2x.png") 2x
+    ),
     linear-gradient(to bottom, #4c4b50 62.92%, $primary-bg-color 62.92%);
   background-repeat: no-repeat;
   background-position: top center;
@@ -30,7 +35,12 @@
       z-index: -1;
       background-image:
         linear-gradient(to left, rgba($basic-green, 0.85) 50%, $primary-bg-color 50%),
-        image-set(url("../../images/background/hero-background-desktop@1x.webp") 1x, url("../../images/background/hero-background-desktop@1x.png") 1x, url("../../images/background/hero-background-desktop@2x.webp") 2x, url("../../images/background/hero-background-desktop@2x.png") 2x),
+        image-set(
+          url("../../images/background/hero-background-desktop@1x.webp") 1x,
+          url("../../images/background/hero-background-desktop@1x.png") 1x,
+          url("../../images/background/hero-background-desktop@2x.webp") 2x,
+          url("../../images/background/hero-background-desktop@2x.png") 2x
+        ),
         linear-gradient(to left, #4e4f53 50%, $primary-bg-color 50%);
       background-position: top right;
       background-size: 100% auto, 50% auto, 100% auto;

@@ -2,9 +2,7 @@
   @include font-full($oswald-font, 24px, 1, 400, $secondary-color);
   position: relative;
   background-color: $primary-bg-color;
-  box-shadow:
-    40px 0 0 0 $primary-bg-color,
-    -40px 0 0 0 $primary-bg-color;
+  box-shadow: 40px 0 0 0 $primary-bg-color, -40px 0 0 0 $primary-bg-color;
 
   &::before {
     @include before-after(100vw, 2px);

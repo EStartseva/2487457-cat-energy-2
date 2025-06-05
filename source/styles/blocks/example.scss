@@ -83,6 +83,7 @@
 
   &--secondary {
     margin-block: 0;
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -125,7 +126,7 @@
 
 .example__meaning {
   display: inline;
-  margin-left: 5px;
+  margin-left: 2px;
 
   @media screen and (min-width: $desktop-width) {
     margin-left: 60px;
@@ -157,12 +158,10 @@
 
   &--before {
     object-position: left;
-    /* transform: translate(50%); */
   }
 
   &--after {
     object-position: right;
-    /* transform: translate(-50%); */
   }
 
   @media screen and (min-width: $tablet-width) {

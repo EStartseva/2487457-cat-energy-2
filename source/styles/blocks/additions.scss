@@ -77,7 +77,7 @@
 
   @media screen and (min-width: $desktop-width) {
     align-items: center;
-    padding: 15px 0 16px 1px;
+    padding: 16px 0 16px 1px;
     gap: 40px;
 
     &:last-child {
@@ -137,7 +137,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    text-align: right; /* ! */
+    text-align: left; 
   }
 }
 

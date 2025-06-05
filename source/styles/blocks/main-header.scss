@@ -17,7 +17,7 @@
 	}
 
 	@media screen and (min-width: $desktop-width) {
-		padding-block: 43px 0;
+		padding-block: 54px 0;
 	}
 
 	&--home {
@@ -100,6 +100,8 @@
 
 .main-header__logo {
 	display: flex;
+	width: 190px;
+	justify-content: space-between;
 
 	&:hover {
 		opacity: 0.8;
@@ -111,6 +113,14 @@
 
 	&:active {
 		opacity: 0.6;
+	}
+
+	@media screen and (min-width: $tablet-width) {
+		width: 174px;
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		width: 200px;
 	}
 }
 

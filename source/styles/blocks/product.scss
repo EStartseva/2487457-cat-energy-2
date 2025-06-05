@@ -11,7 +11,7 @@
     padding: 10px 37px 40px;
     grid-template-columns: 1fr;
     grid-template-rows: 210px auto 1fr auto;
-    row-gap: 21px;
+    row-gap: 22px;
     justify-content: center;
     background: linear-gradient(to bottom, $primary-bg-color 81px, $basic-grey 81px);
   }
@@ -147,7 +147,7 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    width: 140px;
+    width: 130px;
     margin-inline: auto;
   }
 
@@ -159,6 +159,7 @@
 
     @media screen and (min-width: $tablet-width) {
       margin-bottom: 0;
+      width: 135px;
     }
   }
 
